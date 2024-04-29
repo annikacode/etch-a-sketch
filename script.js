@@ -1,7 +1,8 @@
 // Function to create a grid
 
-function createGrid() {
+function createGrid(numSqaures) {
     const container = document.querySelector('.grid-container');
+    container.innerHTML = '';
 
     for (let i = 0; i < 16 * 16; i++) {
         const div = document.createElement('div');
