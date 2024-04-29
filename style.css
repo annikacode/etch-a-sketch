@@ -8,6 +8,7 @@ body {
     flex-wrap: wrap;
     width: 100vw;
     height: 100vh;
+    border: 1px solid black
 }
 
 .grid-item {
@@ -15,5 +16,5 @@ body {
     height: calc(100% / 16);
     box-sizing: border-box;
     border: 1px solid white;
-    background-color: lightgray
+    background-color: lightgray;
 }
