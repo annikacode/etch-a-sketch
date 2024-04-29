@@ -9,3 +9,21 @@ function creatGrid() {
         container.appendChild(div);
     }
 }
+
+// Create function for hover effect
+function handleHover(event) {
+    if (event.target.classList.contains('grid-item')) {
+        event.target.style.backgroundColor = 'black'
+    }
+}
+
+// Add a function to reset the color after mouse leaves block
+function mouseLeave(event) {
+    if (event.target.classList.contains('grid-item')) {
+        event.target.style.backgroundColor = 'lightgray';
+    }
+}
+
+
+//Create grid when window opens and page loads
+window.onload = creatGrid;
