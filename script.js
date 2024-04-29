@@ -9,6 +9,12 @@ function createGrid(numSqaures) {
         div.classList.add('grid-item');
         container.appendChild(div);
     }
+const sideLength = 960 / numSqaures;
+document.querySelectorAll('.grid-item').forEach(item => {
+    item.style.width = sideLength + 'px';
+    item.style.height = sideLength + 'px';
+})
+
 }
 
 // Create function for hover effect
@@ -40,9 +46,12 @@ window.onload = function() {
 
 // Event listener for the reset button
 document.getElementById('reset-button').addEventListener('click', function() {
-    const numSqaures = prompt('How many squares would you like in the grid?');
-    if (numSqaures) {
-        createGrid(parseInt(numSqaures));
+    let numSqaures = prompt('How many sqaures would you like?');
+    numSqaures = parseInt(numSqaures);
+    if (numSqaures && numSqaures > 0 && numSqaures <= 100) {
+        createGrid(numSqaures);
+    } else {
+        alert('PLease enter a number between 1 and 100');
     }
 
 })
