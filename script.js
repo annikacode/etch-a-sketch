@@ -30,3 +30,9 @@ window.onload = function() {
     createGrid();
     const gridItems = document.querySelectorAll('.grid-item');
 }
+
+// Event listeners for the hover effect
+gridItems.forEach(item => {
+    item.addEventListener('mouseover', handleHover);
+    item.addEventListener('mouseleave', mouseLeave)
+});
