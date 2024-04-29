@@ -26,4 +26,7 @@ function mouseLeave(event) {
 
 
 //Create grid when window opens and page loads
-window.onload = creatGrid;
+window.onload = function() {
+    createGrid();
+    const gridItems = document.querySelectorAll('.grid-item');
+}
