@@ -13,6 +13,12 @@ const sideLength = 960 / numSqaures;
 document.querySelectorAll('.grid-item').forEach(item => {
     item.style.width = sideLength + 'px';
     item.style.height = sideLength + 'px';
+});
+
+const gridItems = document.querySelectorAll('.grid-item');
+gridItems.forEach(item => {
+    item.addEventListener('mouseover', handleHover);
+    item.addEventListener('mouseleave', handleMouseLeave);
 })
 
 }
