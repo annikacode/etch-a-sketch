@@ -17,9 +17,13 @@ body {
 }
 
 .grid-item {
-    width: calc(100% / 16 - 2px);
-    height: calc(100% / 16 - 2px);
+    width: calc(100% / 16);
+    height: calc(100% / 16);
     background-color: #ffffff;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+.grid-item:hover {
+    background-color: #ff5733; /* Change color on hover */
 }
